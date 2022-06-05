@@ -1,0 +1,39 @@
+
+
+.card-body{
+    background-color: #8E44AD;
+    color: white;
+}
+
+.animacionInformacionIndex{
+    animation-duration: 0.4s;
+    animation-name: parrafoEntraIzq;
+    @keyframes parrafoEntraIzq {
+        from { transform: translate(1000px,  0); }
+        to   { transform: translate(-0px, 0); } 
+    }  
+        
+        .imagenInformacion{
+            padding: 2px;
+            .divTextoIntroduccion{
+                padding-left: 20px;
+
+                .informacionIndex{
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 13px;
+
+                    .textoIntroduccion{ /*Titulo Bienvenida*/
+                        color: #734885;
+                    }
+                }
+            }
+        }
+}
+
+
+.card-body{
+    background-color: #8E44AD;
+    color: white;
+        
+}
+

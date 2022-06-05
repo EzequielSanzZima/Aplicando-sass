@@ -1,0 +1,188 @@
+$colorTopSub:#7D3C98;
+$colorHeaderFooter:#8E44AD;
+
+@import "headerfooter";
+@import "index";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;1,100&display=swap');
+
+
+
+/*Todas las paginas*/
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+/*------------------Header-----------*/
+
+
+
+
+/*--------------Main Index-------------------*/
+
+
+
+
+/*---------------------Footer----------------*/
+
+
+/*------------Contacto----------*/
+
+.bodyCardContacto{
+    background-color: #A569BD  ;
+}
+
+.contactoTexto{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*-----------Servicios------------*/
+
+.animacionServicioDerecha{     /*Acordeon*/
+    animation-duration: 0.4s;
+    animation-name: parrafoEntraIzq;
+
+}
+
+@keyframes parrafoEntraIzq {
+    from { transform: translate(1000px,  0); }
+    to   { transform: translate(-0px, 0); }    
+}
+
+.animacionServicioIzquierda{ /*Servicio peluqueria*/
+    animation-duration: 0.4s;
+    animation-name: anmiServicio;
+
+}
+
+@keyframes anmiServicio {
+    from { transform: translate(-1000px,  0); }
+    to   { transform: translate(-0px, 0); }    
+}
+
+.servicios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(192, 76, 167);
+}
+.accordion-button{ /*Letras Sin abrir*/
+    color: rgb(184, 44, 153);
+}
+.accordion-button:not(.collapsed){ /*Abierto*/
+    background-color: rgb(253, 159, 253);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.letraServicioAcordeon{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+}
+
+.imagenInformacionPeluqueria{
+    height: 40vh;
+}
+
+.divServicioTexto{
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+}
+.divServicioTexto ul {
+    list-style-position: inside;
+}
+
+.divServicioTexto ul li::marker{
+    color:rgb(192, 76, 167);
+    font-size: 10px
+}
+
+
+/*----------------------Quien Somos---------------*/
+.letraQuienSomosTexto{
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*----------------------Galeria-------------------*/
+.galeriaContainer img{
+    width: 100%;
+    height: 350px;
+}
+
+.galeriaContainer img:hover{
+    border:5px solid #f7f7f7;
+}
+
+.galeriaContainer .col-lg-4{
+    margin: 0px;
+    padding: 25px;
+}
+
+
+
+
+
+
+/*Todas las paginas*/
+.btnColor{
+    --bs-btn-bg: rgb(192, 76, 167);
+    --bs-btn-border-color: rgb(192, 76, 167);
+    --bs-btn-hover-bg: rgb(150, 71, 167);
+    --bs-btn-hover-border-color: rgb(150, 71, 167);
+}
+
+.whatsapp{
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+}
+
+
+.titulo{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(192, 76, 167);
+}
+
+.animacionTitulo{
+    animation-duration: 0.4s;
+    animation-name: animTitulo;
+}
+@keyframes animTitulo {
+    from { font-size: 0px; }
+    to   { font-size: 40px; }    
+}
+
+@media only screen and (max-width: 768px){ /*Tablet Vertical*/
+
+    /*Todas las paginas*/
+    .whatsapp{
+        display: none;
+    }
+
+    /*header*/
+    .navCentro{
+        padding: 0px 15px;
+    }
+
+    /*index*/
+    .imagenInformacion{
+        height: 28vh;
+    }
+
+    /*Servicios*/
+    .imagenInformacionPeluqueria{
+        height: 330px;
+    }
+    .divServicioTexto{
+        padding: 15px 48px 5px 48px!important;
+    }
+
+}
+
+
